@@ -73,9 +73,6 @@ const categories = ref<RequestCategory[]>([
   'Другая',
 ]);
 
-console.log(typeof(request.value?.createdAt))
-
-
 const handleEdit = (formData: RequestFormData) => {
   if (request.value) {
     requestStore.updateRequest(request.value.id, formData);
